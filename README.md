@@ -1,6 +1,6 @@
 # axii
 
-![axii](./public/meta_axii.jpg])
+![axii](./public/meta_axii.jpg)
 
 ## Run locally
 
