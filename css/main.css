@@ -1,0 +1,20 @@
+@import "@axodotdev/fringe/src/assets/main.css";
+
+.tooltip {
+  @apply relative;
+}
+
+.tooltip:hover:before,
+.tooltip:hover:after {
+  @apply block;
+}
+
+.tooltip:before {
+  @apply absolute hidden -top-4 left-1/2 rounded bg-slate-700 text-center text-sm  w-auto -translate-x-1/2 -translate-y-full z-10 p-2 text-slate-200 min-w-[150px];
+  content: attr(data-text);
+}
+
+.tooltip:after {
+  @apply absolute hidden -top-4 left-1/2 w-auto -translate-x-1/2 -translate-y-full z-10 mt-5 border-t-slate-700 border-[10px] border-transparent;
+  content: "";
+}

@@ -1,0 +1,26 @@
+{
+  "name": "axii",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "nuxt generate",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.0.1",
+    "nuxt": "3.0.0-rc.12",
+    "prettier": "^2.7.1",
+    "webpack": "^5.74.0"
+  },
+  "dependencies": {
+    "@axodotdev/eslint-config": "0.1.0",
+    "@axodotdev/fringe": "^0.0.1",
+    "aalib.js": "^2.0.0",
+    "file-saver": "^2.0.5",
+    "html2canvas": "^1.4.1",
+    "vue": "^3.2.41",
+    "vue3-dropzone": "^2.0.1"
+  }
+}
