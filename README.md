@@ -1,5 +1,3 @@
-# axii
-
 ![axii](./public/meta_axii.jpg)
 
 ## Run locally

@@ -1,0 +1,21 @@
+name: Lint
+on: [push]
+jobs:
+  checks:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node: ["18.x"]
+        os: [ubuntu-latest]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+          cache: "yarn"
+
+      - run: yarn
+      - run: yarn lint
