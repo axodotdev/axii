@@ -22,10 +22,10 @@
     eslint-plugin-prettier "^4.2.1"
     eslint-plugin-vue "^9.5.1"
 
-"@axodotdev/fringe@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@axodotdev/fringe/-/fringe-0.0.1.tgz#0eb863de9fc4c34479b19175ef6da9f04f861ddc"
-  integrity sha512-knOAHOKa+LbSFoHE5T2hATOgIIIgVNlzqIqNJGRN5+KuYqsY/7Mnp6uNavA0mgNChNH4x8VJmmy03DuFC3rJTw==
+"@axodotdev/fringe@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@axodotdev/fringe/-/fringe-0.0.2.tgz#ef7acb4135c1de80a60a35a32ee9fbe477bba169"
+  integrity sha512-xJSVIBlvzhnHI/Ytv3omLtx3AM/z4IKbDWPZXjPbrcrAN6rPtX7qCmzv1Uth+rCeBuZFIhZCDx+EvQQYoET1Fw==
   dependencies:
     "@headlessui/vue" "^1.7.2"
     "@tailwindcss/forms" "^0.5.3"
