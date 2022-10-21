@@ -1,7 +1,7 @@
 import aalib from "aalib.js";
 import { readUploadedImage } from "./read-uploaded-image";
 
-export function useAsciiConverter({ reverse, ascii }) {
+export function useAsciiConverter({ invert, ascii }) {
   const convert = async (file) => {
     const { width, height, image } = await readUploadedImage(file);
 
@@ -14,7 +14,7 @@ export function useAsciiConverter({ reverse, ascii }) {
           height,
         })
       )
-      .map(reverse.value ? aalib.filter.inverse() : (a) => a)
+      .map(invert.value ? aalib.filter.inverse() : (a) => a)
       .map(
         aalib.render.html({
           background: "transparent",

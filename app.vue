@@ -12,11 +12,11 @@ import AxoFooter from "@axodotdev/fringe/lib/Footer.vue";
 useSeo();
 const asciiContainer = ref(null);
 const error = ref(null);
-const reverse = ref(false);
+const invert = ref(false);
 const ascii = ref(null);
 const isGradientOn = ref(false);
 const { convert } = useAsciiConverter({
-  reverse,
+  invert,
   ascii,
 });
 
@@ -70,13 +70,13 @@ const onToggle = (value) => (isGradientOn.value = value);
           </button>
           <div class="flex gap-4 items-center mb-8">
             <input
-              id="image-reverse"
-              v-model="reverse"
+              id="image-invert"
+              v-model="invert"
               type="checkbox"
               class="h-5 w-5 rounded border-axo-orange shadow-axo-orange text-axo-orange-dark focus:ring-offset-axo-pink focus:ring-offset-1 focus:ring-axo-orange bg-slate-200"
             />
-            <label for="image-reverse" class="text-slate-300"
-              >reverse image</label
+            <label for="image-invert" class="text-slate-300"
+              >invert image</label
             >
           </div>
         </div>
