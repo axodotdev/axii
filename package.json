@@ -13,17 +13,20 @@
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@axodotdev/eslint-config": "0.1.0",
     "@nuxtjs/tailwindcss": "^6.0.1",
-    "nuxt": "3.0.0-rc.12",
-    "prettier": "^2.7.1",
-    "webpack": "^5.74.0",
     "@testing-library/vue": "^6.6.1",
     "@vitest/ui": "^0.24.3",
     "happy-dom": "^7.6.0",
-    "vitest": "^0.24.3"
+    "nuxt": "3.0.0-rc.12",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.2.1",
+    "vitest": "^0.24.3",
+    "@vue/compiler-sfc": "^3.2.41",
+    "webpack": "^5.74.0"
   },
   "dependencies": {
-    "@axodotdev/eslint-config": "0.1.0",
     "@axodotdev/fringe": "^0.0.2",
     "aalib.js": "^2.0.0",
     "file-saver": "^2.0.5",
