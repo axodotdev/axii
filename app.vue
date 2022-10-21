@@ -100,9 +100,11 @@ const onToggle = (value) => (isGradientOn.value = value);
             ]"
             v-html="ascii"
           />
-          <pre v-if="!ascii" class="text-slate-400 whitespace-pre-wrap">{{
-            DOCS
-          }}</pre>
+          <span
+            v-if="!ascii"
+            class="text-slate-400 whitespace-pre-wrap font-mono"
+            v-html="DOCS"
+          ></span>
           <div
             v-if="!!ascii"
             class="flex justify-between items-center w-full px-4"
