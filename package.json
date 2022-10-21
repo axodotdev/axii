@@ -7,17 +7,24 @@
     "build": "nuxt generate",
     "dev": "nuxt dev",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.0.1",
     "nuxt": "3.0.0-rc.12",
     "prettier": "^2.7.1",
-    "webpack": "^5.74.0"
+    "webpack": "^5.74.0",
+    "@testing-library/vue": "^6.6.1",
+    "@vitest/ui": "^0.24.3",
+    "happy-dom": "^7.6.0",
+    "vitest": "^0.24.3"
   },
   "dependencies": {
     "@axodotdev/eslint-config": "0.1.0",
-    "@axodotdev/fringe": "^0.0.1",
+    "@axodotdev/fringe": "^0.0.2",
     "aalib.js": "^2.0.0",
     "file-saver": "^2.0.5",
     "html2canvas": "^1.4.1",

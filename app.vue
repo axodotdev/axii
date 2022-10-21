@@ -5,18 +5,18 @@ import { useAsciiConverter } from "./utils/ascii";
 import { DOCS } from "./utils/docs";
 import { useSeo } from "./utils/useSeo";
 import { TITLE } from "./utils/constants";
-import AxoHeader from "./components/Header.vue";
+import AxoHeader from "@axodotdev/fringe/lib/Header.vue";
 import AxoSwitch from "@axodotdev/fringe/lib/Switch.vue";
 import AxoFooter from "@axodotdev/fringe/lib/Footer.vue";
 
 useSeo();
 const asciiContainer = ref(null);
 const error = ref(null);
-const reverse = ref(false);
+const invert = ref(false);
 const ascii = ref(null);
 const isGradientOn = ref(false);
 const { convert } = useAsciiConverter({
-  reverse,
+  invert,
   ascii,
 });
 
@@ -70,13 +70,13 @@ const onToggle = (value) => (isGradientOn.value = value);
           </button>
           <div class="flex gap-4 items-center mb-8">
             <input
-              id="image-reverse"
-              v-model="reverse"
+              id="image-invert"
+              v-model="invert"
               type="checkbox"
               class="h-5 w-5 rounded border-axo-orange shadow-axo-orange text-axo-orange-dark focus:ring-offset-axo-pink focus:ring-offset-1 focus:ring-axo-orange bg-slate-200"
             />
-            <label for="image-reverse" class="text-slate-300"
-              >reverse image</label
+            <label for="image-invert" class="text-slate-300"
+              >invert image</label
             >
           </div>
         </div>
@@ -87,6 +87,7 @@ const onToggle = (value) => (isGradientOn.value = value);
             v-if="ascii"
             ref="asciiContainer"
             :class="[
+              isGradientOn && 'text-axo-orange',
               'text-[6px] sm:text-[9px] font-mono bg-slate-900 whitespace-pre text-slate-300 p-4 pt-2 absolute -top-[5000px]',
             ]"
             v-html="ascii"
