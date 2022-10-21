@@ -8,6 +8,7 @@
     "dev": "nuxt dev",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "lint": "eslint .",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
