@@ -87,6 +87,7 @@ const onToggle = (value) => (isGradientOn.value = value);
             v-if="ascii"
             ref="asciiContainer"
             :class="[
+              isGradientOn && 'text-axo-orange',
               'text-[6px] sm:text-[9px] font-mono bg-slate-900 whitespace-pre text-slate-300 p-4 pt-2 absolute -top-[5000px]',
             ]"
             v-html="ascii"
