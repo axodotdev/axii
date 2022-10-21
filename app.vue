@@ -5,7 +5,7 @@ import { useAsciiConverter } from "./utils/ascii";
 import { DOCS } from "./utils/docs";
 import { useSeo } from "./utils/useSeo";
 import { TITLE } from "./utils/constants";
-import AxoHeader from "./components/Header.vue";
+import AxoHeader from "@axodotdev/fringe/lib/Header.vue";
 import AxoSwitch from "@axodotdev/fringe/lib/Switch.vue";
 import AxoFooter from "@axodotdev/fringe/lib/Footer.vue";
 

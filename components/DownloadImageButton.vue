@@ -1,8 +1,9 @@
 <script setup>
 import { ref } from "vue";
-import AxoButton from "@axodotdev/fringe/lib/Button";
+import AxoButton from "@axodotdev/fringe/lib/Button.vue";
 import html2canvas from "html2canvas";
 import { saveAs } from "file-saver";
+
 const props = defineProps({
   container: { type: Object, required: true },
 });

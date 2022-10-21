@@ -1,6 +1,6 @@
 <script setup>
 import { ref, toRef } from "vue";
-import AxoButton from "@axodotdev/fringe/lib/Button";
+import AxoButton from "@axodotdev/fringe/lib/Button.vue";
 
 const props = defineProps({
   ascii: { type: String, required: true },
