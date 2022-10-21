@@ -23,4 +23,8 @@ yarn dev
 
 ## License
 
-[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
+axii is dual-licensed under [MIT] and [Apache-2.0]. If you end up finding it
+useful for something we'd love to hear about it: hello@axo.dev.
+
+[MIT]: https://choosealicense.com/licenses/mit/
+[Apache-2.0]: https://choosealicense.com/licenses/apache-2.0/
