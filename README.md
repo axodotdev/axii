@@ -2,6 +2,7 @@
 
 ![build](https://github.com/axodotdev/axii/actions/workflows/build.yml/badge.svg)
 ![lint](https://github.com/axodotdev/axii/actions/workflows/lint.yml/badge.svg)
+![test](https://github.com/axodotdev/axii/actions/workflows/test.yml/badge.svg)
 
 # axii
 > an image to ascii generator
